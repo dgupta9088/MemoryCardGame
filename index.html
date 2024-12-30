@@ -80,7 +80,7 @@
 <body>
     <div class="game-header">
         <div class="moves">Moves: <span id="moves-counter">0</span></div>
-        <div class="timer">Time: <span id="timer">2:00</span></div>
+        <div class="timer">Time: <span id="timer">1:20</span></div>
     </div>
     <div id="game-board" class="game-board"></div>
 
@@ -105,7 +105,7 @@
         const movesCounter = document.getElementById('moves-counter');
         const timerElement = document.getElementById('timer');
 
-        let timeLeft = 120; // 2 minutes in seconds
+        let timeLeft = 80; // 2 minutes in seconds
         let timerInterval;
         let timerStarted = false;
 
@@ -202,7 +202,7 @@
         function resetGame() {
             clearInterval(timerInterval);
             timerStarted = false;
-            timeLeft = 120;
+            timeLeft = 80;
             moves = 0;
             flippedCards = 0;
             updateTimerDisplay();
